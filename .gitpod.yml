@@ -3,6 +3,7 @@ tasks:
       python -m venv venv
       source venv/bin/activate
       pip install --upgrade pip wheel setuptools
+      pip install python-rtmidi --install-option "--no-alsa"
       pip install isobar 
       pip install "kivy[base]" kivy_examples
 
@@ -13,6 +14,7 @@ tasks:
   - command: |
       source venv/bin/activate
       pip install --upgrade pip wheel setuptools
+      pip install python-rtmidi --install-option "--no-alsa"
       pip install isobar 
       pip install "kivy[base]" kivy_examples
 
