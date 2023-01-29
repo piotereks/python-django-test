@@ -1,0 +1,19 @@
+tasks:
+  - init: |
+      python -m venv venv
+      source venv/bin/activate
+      pip install --upgrade pip wheel setuptools
+      pip install Django
+      python manage.py migrate
+  - command: |
+      source venv/bin/activate
+      python manage.py runserver
+  
+ports:
+  - port: 8000
+    visibility: private
+    onOpen: open-preview
+
+vscode:
+  extensions:
+    - ms-python.python
