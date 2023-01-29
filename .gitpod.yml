@@ -6,7 +6,8 @@ tasks:
       pip install python-rtmidi --install-option "--no-alsa"
       pip install isobar 
       pip install "kivy[base]" kivy_examples
-      sudo apt install xauth xorg
+      sudo apt-get update && sudo apt-get upgrade
+      sudo apt install xauth xorg x11-apps
 
 
   - command: |
@@ -18,7 +19,8 @@ tasks:
       pip install python-rtmidi --install-option "--no-alsa"
       pip install isobar 
       pip install "kivy[base]" kivy_examples
-      
+      sudo apt-get update && sudo apt-get upgrade
+      sudo apt install xauth xorg x11-apps
 
 vscode:
   extensions:
