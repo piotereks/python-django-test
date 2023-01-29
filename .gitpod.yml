@@ -9,7 +9,7 @@ tasks:
       sudo DEBIAN_FRONTEND=noninteractive
       sudo apt-get update  -y && sudo apt-get upgrade -y
       sudo apt install openssh-server -y
-      sudo apt install xauth x11-utils x11-apps -y
+      sudo apt install xauth xorg x11-apps -y
       sudo echo ForwardAgent yes >>/etc/ssh/ssh_config 
       sudo echo ForwardX11 yes >>/etc/ssh/ssh_config
       
@@ -30,7 +30,7 @@ tasks:
       sudo  DEBIAN_FRONTEND=noninteractive
       sudo apt-get update  -y && sudo apt-get upgrade -y
       sudo apt install openssh-server -y
-      sudo apt install xauth x11-utils x11-apps -y
+      sudo apt install xauth xorg x11-apps -y
       sudo echo ForwardAgent yes >>/etc/ssh/ssh_config 
       sudo echo ForwardX11 yes >>/etc/ssh/ssh_config 
       echo services status before script
