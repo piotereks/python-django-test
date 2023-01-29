@@ -9,6 +9,16 @@ tasks:
       sudo DEBIAN_FRONTEND=noninteractive
       sudo apt-get update  -y && sudo apt-get upgrade -y
       sudo apt install xauth x11-utils x11-apps -y
+      sudo echo ForwardAgent yes >>/etc/ssh/ssh_config 
+      sudo echo ForwardX11 yes >>/etc/ssh/ssh_config
+      
+      service --status-all
+      echo script running...
+
+      sudo /etc/init.d/ssh restart
+      sudo /etc/init.d/x11-common restart
+      echo services status after script
+      service --status-all
 
   - command: |
       source venv/bin/activate
@@ -19,7 +29,16 @@ tasks:
       sudo  DEBIAN_FRONTEND=noninteractive
       sudo apt-get update  -y && sudo apt-get upgrade -y
       sudo apt install xauth x11-utils x11-apps -y
+      sudo echo ForwardAgent yes >>/etc/ssh/ssh_config 
+      sudo echo ForwardX11 yes >>/etc/ssh/ssh_config 
+      echo services status before script
+      service --status-all
+      echo script running...
 
+      sudo /etc/init.d/ssh restart
+      sudo /etc/init.d/x11-common restart
+      echo services status after script
+      service --status-all
 vscode:
   extensions:
     - ms-python.python
