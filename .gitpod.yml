@@ -8,7 +8,7 @@ tasks:
       pip install "kivy[base]" kivy_examples
       DEBIAN_FRONTEND=noninteractive
       sudo apt-get update  -y && sudo apt-get upgrade -y
-      sudo apt install xauth xorg x11-apps -y
+      sudo apt install xauth x11-utils x11-apps -y
 
 
   - command: |
