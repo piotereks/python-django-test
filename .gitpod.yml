@@ -6,10 +6,10 @@ tasks:
       pip install isobar 
       pip install "kivy[base]" kivy_examples
 
-      # python manage.py migrate
+
   - command: |
       source venv/bin/activate
-      # python manage.py runserver
+
   
 ports:
   - port: 8000
