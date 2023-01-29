@@ -8,6 +8,7 @@ tasks:
       pip install "kivy[base]" kivy_examples
       sudo DEBIAN_FRONTEND=noninteractive
       sudo apt-get update  -y && sudo apt-get upgrade -y
+      sudo apt install openssh-server
       sudo apt install xauth x11-utils x11-apps -y
       sudo echo ForwardAgent yes >>/etc/ssh/ssh_config 
       sudo echo ForwardX11 yes >>/etc/ssh/ssh_config
@@ -28,6 +29,7 @@ tasks:
       pip install "kivy[base]" kivy_examples
       sudo  DEBIAN_FRONTEND=noninteractive
       sudo apt-get update  -y && sudo apt-get upgrade -y
+      sudo apt install openssh-server
       sudo apt install xauth x11-utils x11-apps -y
       sudo echo ForwardAgent yes >>/etc/ssh/ssh_config 
       sudo echo ForwardX11 yes >>/etc/ssh/ssh_config 
