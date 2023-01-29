@@ -10,10 +10,6 @@ tasks:
       sudo apt-get update  -y && sudo apt-get upgrade -y
       sudo apt install xauth x11-utils x11-apps -y
 
-
-  - command: |
-      source venv/bin/activate
-
   - command: |
       source venv/bin/activate
       pip install --upgrade pip wheel setuptools
