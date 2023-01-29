@@ -10,6 +10,11 @@ tasks:
   - command: |
       source venv/bin/activate
 
+  - command: |
+      source venv/bin/activate
+      pip install --upgrade pip wheel setuptools
+      pip install isobar 
+      pip install "kivy[base]" kivy_examples
 
 
 vscode:
