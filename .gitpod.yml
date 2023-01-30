@@ -8,7 +8,7 @@ tasks:
       pip install python-rtmidi --install-option "--no-alsa"
       pip install isobar 
       pip install "kivy[base]" kivy_examples
-      sudo DEBIAN_FRONTEND=noninteractive
+      sudo DEBIAN_FRONTEND=noninteractive  Dapt-get install keyboard-configuration
       sudo apt-get update  -y && sudo apt-get upgrade -y
       sudo apt install openssh-server -y
       sudo apt install xauth xorg x11-apps -y
@@ -29,7 +29,7 @@ tasks:
       pip install python-rtmidi --install-option "--no-alsa"
       pip install isobar 
       pip install "kivy[base]" kivy_examples
-      sudo  DEBIAN_FRONTEND=noninteractive
+      sudo DEBIAN_FRONTEND=noninteractive  apt install keyboard-configuration
       sudo apt-get update  -y && sudo apt-get upgrade -y
       sudo apt install openssh-server -y
       sudo apt install xauth xorg x11-apps -y
